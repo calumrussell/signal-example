@@ -1,0 +1,135 @@
+{
+    "services": [
+        {
+            "name": "signal",
+            "id": 1,
+            "endpoints": [
+                {
+                    "name": "SignalList",
+                    "code": 10010,
+                    "parameters": [],
+                    "returns": [
+                        {
+                            "name": "signals",
+                            "ty": {
+                                "Vec": {
+                                    "Struct": {
+                                        "name": "Signal",
+                                        "fields": [
+                                            {
+                                                "name": "id",
+                                                "ty": "Int"
+                                            },
+                                            {
+                                                "name": "name",
+                                                "ty": "String"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "stream_response": null,
+                    "description": "",
+                    "json_schema": null
+                },
+                {
+                    "name": "SignalListById",
+                    "code": 10020,
+                    "parameters": [
+                        {
+                            "name": "signal_id",
+                            "ty": "Int"
+                        }
+                    ],
+                    "returns":[
+                        {
+                            "name": "signals",
+                            "ty": {
+                                "Vec": {
+                                    "Struct": {
+                                        "name": "Signal",
+                                        "fields": [
+                                            {
+                                                "name": "signal_id",
+                                                "ty": "Int"
+                                            },
+                                            {
+                                                "name": "message",
+                                                "ty": "JSONB"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "stream_response": null,
+                    "description": "",
+                    "json_schema": null
+                },
+                {
+                    "name": "SignalListOverLastDay",
+                    "code": 10030,
+                    "parameters": [],
+                    "returns":[
+                        {
+                            "name": "signals",
+                            "ty": {
+                                "Vec": {
+                                    "Struct": {
+                                        "name": "Signal",
+                                        "fields": [
+                                            {
+                                                "name": "signal_id",
+                                                "ty": "Int"
+                                            },
+                                            {
+                                                "name": "message",
+                                                "ty": "JSONB"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "stream_response": null,
+                    "description": "",
+                    "json_schema": null
+                },
+                {
+                    "name": "SignalSubscribe",
+                    "code": 10040,
+                    "parameters": [],
+                    "returns": [],
+                    "stream_response":[
+                        {
+                            "name": "signals",
+                            "ty": {
+                                "Vec": {
+                                    "Struct": {
+                                        "name": "Signal",
+                                        "fields": [
+                                            {
+                                                "name": "signal_id",
+                                                "ty": "Int"
+                                            },
+                                            {
+                                                "name": "message",
+                                                "ty": "JSONB"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "description": "",
+                    "json_schema": null
+                }
+            ]
+        }
+    ]
+}

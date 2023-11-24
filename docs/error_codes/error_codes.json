@@ -1,0 +1,35 @@
+{
+    "language": "en",
+    "codes": [
+      {
+        "code": 100400,
+        "symbol": "BadRequest",
+        "message": "Bad Request",
+        "source": "Custom"
+      },
+      {
+        "code": 100500,
+        "symbol": "InternalServerError",
+        "message": "Internal Server Error",
+        "source": "Custom"
+      },
+      {
+        "code": 100501,
+        "symbol": "NotImplemented",
+        "message": "Method not implemented",
+        "source": "Custom"
+      },
+      {
+        "code": 100404,
+        "symbol": "NotFound",
+        "message": "NotFoundResource",
+        "source": "Custom"
+      },
+      {
+        "code": 100900,
+        "symbol": "SignalNotFound",
+        "message": "Signal ID not found",
+        "source": "Custom"
+      }
+    ]
+}

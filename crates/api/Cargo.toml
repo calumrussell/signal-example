@@ -1,0 +1,16 @@
+[package]
+name = "insolvent_detect_api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.4.0"
+openssl = "0.10.60"
+serde = { version = "1.0.192", features = ["derive"] }
+insolvent_detect_signal = { path = "../signal" }
+serde_json = "1.0"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+doc = false
